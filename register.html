@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EveM</title>
+	<style>
+		div.top
+			{
+				position: fixed;
+				top: 0px;
+				width: 100%;
+				height: 110px;
+				background: #141452;
+				z-index: 999;
+			}
+		div.logo
+			{
+				right: 0px;
+				height: 110px;
+				width: 300px;
+				background-color: white;
+			}
+		div.register
+			{
+				background-color: white;
+				position: absolute;
+				width: 900px;
+				top: 110px;
+  				height: 100%;
+  				left: 50%;
+  				margin: 0 0 0 -450px;
+  				font-size: 20px;
+  			}
+		input
+			{
+				position: absolute;
+				left:450px;
+			}
+  		body 	
+  			{ 
+	    		background-repeat: no-repeat;
+    			background-attachment: fixed;
+ 				background-position: center; 
+ 				background-size: cover;
+			}
+	
+		
+	</style>
+</head>
+<body background="bg.jpg">
+	<div class="top">
+		<div class="logo">
+				<img src="logo.png" height="160px" width="160px" style="margin-top: -25px; margin-left:70px;">
+		</div>
+	</div>
+	<div class="register">
+			<form action="register.php" method="post" style="margin-top:-40px; padding:175px">
+				Username:&nbsp;&nbsp;&nbsp; <input type="text" name="name" required /><br><br>
+				Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="pass1" required /><br><br>
+				re-enter Password:<input type="password" name="pass2" required /><br><br>
+				Select 3 "different" priorities...<br>
+				Priority 1:<select name="pri1">
+					<option>Computers</option>
+					<option>Sports</option>
+					<option>Cultural</option>
+					<option>Acadmic</option>
+					<option>Social</option>
+				</select><br>
+				Priority 2:<select name="pri2">
+					<option>Computers</option>
+					<option>Sports</option>
+					<option>Cultural</option>
+					<option>Acadmic</option>
+					<option>Social</option>
+				</select><br>
+				Priority 3:<select name="pri3">
+					<option>Computers</option>
+					<option>Sports</option>
+					<option>Cultural</option>
+					<option>Acadmic</option>
+					<option>Social</option>
+				</select>
+				<div align="center">
+					<input type="submit"/><br /><br />
+				</div>
+			</form>
+	</div>
+
+</body>
+</html>
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EveM</title>
+	<style>
+		div.top
+			{
+				position: fixed;
+				top: 0px;
+				width: 100%;
+				height: 110px;
+				background: #141452;
+				z-index: 999;
+			}
+		div.logo
+			{
+				right: 0px;
+				height: 110px;
+				width: 300px;
+				background-color: white;
+			}
+		div.register
+			{
+				background-color: white;
+				position: absolute;
+				width: 900px;
+				top: 110px;
+  				height: 100%;
+  				left: 50%;
+  				margin: 0 0 0 -450px;
+  				font-size: 30px;
+  			}
+  		body 	
+  			{ 
+	    		background-repeat: no-repeat;
+    			background-attachment: fixed;
+ 				background-position: center; 
+ 				background-size: cover;
+			}
+	
+		
+	</style>
+</head>
+<body background="bg.jpg">
+	<div class="top">
+		<div class="logo">
+				<img src="logo.png" height="160px" width="160px" style="margin-top: -25px; margin-left:70px;">
+		</div>
+	</div>
+	<div class="register">
+		<div class="form">
+			<form action="upload.php" method="post" style="margin-top:20px; padding:25px">
+				Event Name:&nbsp;&nbsp;&nbsp; <input type="text" name="name" size="15" required /><br><br>
+				Time:<input type="time" name="time" required /><br><br>
+				Date:<input type="date" name="date" required /><br><br>
+				Venue:<input type="text" name="venue" required /><br><br>
+				Location:<select name="location">
+					<option>MAC</option>
+					<option>LHC</option>
+					<option>Thomso building</option>
+					<option>Convocation Hall</option>
+					<option>Sports Ground</option>
+				</select><br><br>
+				Tag:<select name="tag">
+						<option>Computers</option>
+						<option>Sports</option>
+						<option>Cultural</option>
+						<option>Acadmic</option>
+						<option>Social</option>
+				</select>
+				<div align="center">
+					<input type="submit"/><br /><br />
+				</div>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
+
